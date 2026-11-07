@@ -7,12 +7,44 @@
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <div class="timer-container">
+    <div class="timer-container">
+        <div class="settings">
             <h1>Pomodoro timer</h1>
-
-            <div class="input-section">
-                <input type="number" id="minutesInput" placeholder="Please enter minutes" min="1">
-            </div>
         </div>
+            <label for="timeOptions">Select how long you'll study for (overall):</label>
+                <select id="option1">
+                    <option value="short">45 minutes</option>
+                    <option value="shortMed">1 hour</option>
+                    <option value="med">1 hour, 15 minutes</option>
+                    <option value="medLong">1 hour, 30 minutes</option>
+                    <option value="long">1 hour, 45 minutes</option>
+                    <option value="xtraLong">2 hours</option>
+                </select>
+            <br>
+            <label for="breakOptions">Select how long you'll have for breaks (overall):</label>
+                <select id="option2">
+                    <option value="shorty">15 minutes</option>
+                    <option value="shortMedy">20 minutes</option>
+                    <option value="medy">25 minutes</option>
+                    <option value="medLongy">30 minutes</option>
+                    <option value="longy">35 minutes</option>
+                    <option value="xtraLongy">40 minutes</option>
+                </select>
+            <br>
+            <label for="colourOptions">Select your colour palette:</label>
+                <select id="option3">
+                    <option value="red">Red</option>
+                    <option value="ornge">Orange</option>
+                    <option value="yelo">Yellow</option>
+                    <option value="gren">Green</option>
+                    <option value="bleu">Blue</option>
+                    <option value="purpl">Purple</option>
+                    <option value="pink">Pink</option>
+                    <option value="rainbow">Random</option>
+                </select>
+            <br>
+            <button onclick="startTime()">Start the timer</button>
+    </div>
+    <script src="script.js"></script>
     </body>
 </html>
